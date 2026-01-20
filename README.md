@@ -8,15 +8,15 @@ If you would like to learn more about LLM-related topics, please contact Jinshua
 
 ## Some reading and learning resources mentioned in the workshop
 
-**Talk on training pipeline of ChatGPT:**
+### **Talk on training pipeline of ChatGPT:**
 
 [State of GPT (Andrej Karpathy)](https://www.youtube.com/watch?v=bZQun8Y4L2A&t=1s)
 
-**Introduction to APIs:**
+### **Introduction to APIs:**
 
 [Python Fundamentals, Collections and First Steps with APIs, DS105 Data for Data Science](https://lse-dsi.github.io/DS105/2025-2026/autumn-term/weeks/week02/lecture.html)
 
-**Books about machine learning, deep learning, LLM and generative AI:**
+### **Books about machine learning, deep learning, LLM and generative AI:**
 
 [**An Introduction to Statistical Learning** by Gareth James, Daniela Witten, Trevor Hastie, Rob Tibshirani, Jonathan Taylor](https://www.statlearning.com/)
 
@@ -26,10 +26,10 @@ If you would like to learn more about LLM-related topics, please contact Jinshua
 
 [**Generative Deep Learning, 2nd Edition** by David Foster](https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/)
 
-**Stanford LLM courses:**
+### **Stanford LLM courses:**
 
 [Stanford CME295 - Transformers & Large Language Models](https://cme295.stanford.edu/syllabus/)
 
-[**LSE Digital Skills Lab courses**](https://info.lse.ac.uk/current-students/digital-skills-lab/Gen-AI)
+### [**LSE Digital Skills Lab courses**](https://info.lse.ac.uk/current-students/digital-skills-lab/Gen-AI)
 
-[**The Stanford AI Index Report**](https://hai.stanford.edu/ai-index)
+### [**The Stanford AI Index Report**](https://hai.stanford.edu/ai-index)
