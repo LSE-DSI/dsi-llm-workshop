@@ -1,6 +1,6 @@
 ---
 title: "OpenAI API with ellmr in R"
-author: "Your Name"
+author: "Jinshuai, ChatGPT"
 date: "2026-01-19"
 output: html_document
 ---
@@ -16,7 +16,7 @@ dotenv::load_dot_env()
 
 ## Instruction
 
-Define your instruction that you want the model to follow:
+Define the instruction that the model needs to follow:
 
 ```{r instruction}
 instruction <- paste(
@@ -69,8 +69,3 @@ cat(toJSON(content, auto_unbox = TRUE, pretty = TRUE))
 # Print the model's response
 print(response)
 ```
-
-## Next Steps
-
-You can continue the conversation using `chat$chat()` with additional messages.
-
