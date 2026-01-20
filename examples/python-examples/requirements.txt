@@ -1,0 +1,7 @@
+torch
+pandas
+transformers
+requests
+python-dotenv
+openai
+pydantic

@@ -1,0 +1,76 @@
+---
+title: "OpenAI API with ellmr in R"
+author: "Your Name"
+date: "2026-01-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Load necessary library
+library(httr2)
+library(jsonlite)
+
+# Set your OpenAI API key
+dotenv::load_dot_env()
+```
+
+## Instruction
+
+Define your instruction that you want the model to follow:
+
+```{r instruction}
+instruction <- paste(
+"You are a research assistant conducting sentiment analysis on Amazon product reviews.",
+"Task:Assign a sentiment score from 1 to 5 to the review below, based on the overall emotional tone expressed by the reviewer.",
+"Use the following scale:",
+"1 - Very negative: strong dissatisfaction, complaints, or anger",
+"2 - Negative: mostly unfavorable with limited positive elements",
+"3 - Neutral or mixed: balanced, factual, or no clear emotional direction",
+"4 - Positive: generally favorable with minor criticism",
+"5 - Very positive: strong satisfaction, praise, or enthusiasm",
+"Guidelines:",
+"Focus on the overall sentiment, not isolated words.",
+"If the review is mixed, choose the score that best reflects the dominant tone.",
+"Be consistent across reviews.",
+"The output should be a number from 1 to 5 only. Do not add additional texts."
+)
+```
+
+## Send Messages
+
+Send the instruction and user message to the model:
+
+```{r send-messages}
+
+# Create the request
+req <- request("https://api.openai.com/v1/chat/completions") %>%
+  req_headers(
+    "Authorization" = paste("Bearer", Sys.getenv("OPENAI_API_KEY")),
+    "Content-Type" = "application/json"
+  ) %>%
+  req_body_json(list(
+    model = "gpt-4o",
+    temperature = 0.0,
+    messages = list(
+      list(role = "developer", content = instruction),
+      list(
+        role = "user", 
+        content = "Works as described, good quality for the price, and I’m satisfied with the purchase."
+      )
+    )
+  ))
+
+# Perform the request
+response <- req_perform(req)
+
+# Parse and print the JSON response
+content <- resp_body_json(response)
+cat(toJSON(content, auto_unbox = TRUE, pretty = TRUE))
+# Print the model's response
+print(response)
+```
+
+## Next Steps
+
+You can continue the conversation using `chat$chat()` with additional messages.
+
