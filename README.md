@@ -28,7 +28,7 @@ If you would like to learn more about LLM-related topics, please contact Jinshua
 
 **Stanford LLM courses:**
 
-[Stanford CME295 - Transformers & Large Language Models](https://cme295.stanford.edu/)
+[Stanford CME295 - Transformers & Large Language Models](https://cme295.stanford.edu/syllabus/)
 
 [**LSE Digital Skills Lab courses**](https://info.lse.ac.uk/current-students/digital-skills-lab/Gen-AI)
 
